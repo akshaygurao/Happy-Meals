@@ -39,8 +39,6 @@ public class ReviewController {
 	@RequestMapping(value = "/review/review", method = RequestMethod.POST)
 	protected ModelAndView setReviews(HttpServletRequest request) throws Exception {
 		System.out.print("Review Restaurant");
-
-
 		try {
 			System.out.println("Inside the review post method");
 			String reviewMessage = request.getParameter("reviewMessage");
